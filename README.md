@@ -1,0 +1,1 @@
+This is the Javascript assignment due Friday, September 29. 
