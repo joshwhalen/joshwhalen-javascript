@@ -42,7 +42,31 @@
 
   // Strings on my own.
     let greeting = 'My name is ' + name
-    console.log(greeting)
+    console.log(greeting);
+
+  // Practicing with functions.
+    console.log("Using functions");
+
+    // Squares any given number
+    function makeSquare(theNumb) {
+      return Math.pow(theNumb, 2)
+    }
+
+    // Calling the function
+    let test1 = makeSquare(10)
+    console.log(test1)
+
+  // Functions on my own.
+    function MakeName(firstName, middleName, lastName) {
+      return firstName + " " + middleName + " " + lastName
+    }
+
+    // Calling the function and logging it to the console.
+    console.log(MakeName('Joshua', 'Earl', 'Whalen'))
+
+    console.log(MakeName('Bobbi', 'Jo', 'Michaelson'))
+
+    console.log(MakeName('Robert', '\"Beto\"', 'O\'Rourke'))
 
 
   </script>
