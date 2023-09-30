@@ -41,7 +41,7 @@
     console.log(name);
 
   // Strings on my own.
-    let greeting = 'My name is ' + name
+    let greeting = 'My name is ' + name;
     console.log(greeting);
 
   // Practicing with functions.
@@ -49,24 +49,61 @@
 
     // Squares any given number
     function makeSquare(theNumb) {
-      return Math.pow(theNumb, 2)
+      return Math.pow(theNumb, 2);
     }
 
     // Calling the function
-    let test1 = makeSquare(10)
-    console.log(test1)
+    let test1 = makeSquare(10);
+    console.log(test1);
 
   // Functions on my own.
-    function MakeName(firstName, middleName, lastName) {
-      return firstName + " " + middleName + " " + lastName
+    function makeName(firstName, middleName, lastName) {
+      return firstName + " " + middleName + " " + lastName;
     }
 
     // Calling the function and logging it to the console.
-    console.log(MakeName('Joshua', 'Earl', 'Whalen'))
+    console.log(makeName('Joshua', 'Earl', 'Whalen'));
 
-    console.log(MakeName('Bobbi', 'Jo', 'Michaelson'))
+    console.log(makeName('Bobbi', 'Jo', 'Michaelson'));
 
-    console.log(MakeName('Robert', '\"Beto\"', 'O\'Rourke'))
+    console.log(makeName('Robert', '\"Beto\"', 'O\'Rourke')); // example from book
+
+  // Improving the makeName() function.
+    console.log("Making better name function."); // this is just to see where we're at in the console
+    
+    // Makes a name and checks for middle initial
+    function makeBetterName(firstName, middleName, lastName) {
+      if (middleName.length === 1) {
+        middleName = middleName + ".";
+      }
+      let fullName = firstName + " " + middleName + " " + lastName;
+      return fullName;
+    }
+
+    // initial testing of new function
+    console.log(makeBetterName("Joan", "Marie", "Larkin"));
+    console.log(makeBetterName("John", "F", "Kennedy"));
+
+    // testing again after the added if statement
+    console.log(makeBetterName("Lyndon", "B", "Johnson")) // it worked
+
+  // Working with an if else function
+    console.log("scoreCompare function");
+    function scoreCompare(home, away) {
+      if (home > away) {
+        return "Home team wins!";
+      } else if (home < away) {
+        return "Away team wins :("
+      } else {
+        return "It was a tie."
+      }
+    }
+    console.log(scoreCompare(5,3));
+    console.log(scoreCompare(3,5));
+    console.log(scoreCompare(2,2))
+
+
+
 
 
   </script>
